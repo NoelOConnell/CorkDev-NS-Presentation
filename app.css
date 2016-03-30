@@ -1,0 +1,19 @@
+﻿
+.message {
+    font-size: 20;
+    color: #284848;
+    horizontal-align: center;
+    margin: 15;
+}
+
+.link {
+    
+    border-width: 2;
+    border-color: #0093c4;
+    text-align: center;
+    width: 100%;
+    padding:10;
+    font-size: 24;
+    color: #0093c4;
+    horizontal-align: center;
+}

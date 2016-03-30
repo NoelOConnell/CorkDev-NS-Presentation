@@ -1,0 +1,10 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" loaded="pageLoaded">
+    <GridLayout rows="*,auto">
+        <StackLayout row="0">
+            <Label text="Tap the button" class="title" />
+            <Button text="Tap" tap="tapAction" class="{{ counter &lt; 1 ? 'disabled' : 'btn' }}" />
+            <Label text="{{ message }}" class="message" textWrap="true" />
+        </StackLayout>
+        <Label row="1" text="Go to Demo 2" class="link" tap="goToDemo2" />
+    </GridLayout>
+</Page>

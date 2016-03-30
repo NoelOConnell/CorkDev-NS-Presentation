@@ -1,0 +1,22 @@
+.title {
+    font-size: 30;
+    horizontal-align: center;
+    margin: 20;
+}
+
+.btn {
+    background-color: #53ad34;
+    border: 10;
+    width: 80%;
+    border-radius: 4;
+    color:white;
+}
+
+.disabled {
+    background-color: orangered;
+    border: 10;
+    width: 80%;
+    border-radius: 4;
+    color:white;
+}
+

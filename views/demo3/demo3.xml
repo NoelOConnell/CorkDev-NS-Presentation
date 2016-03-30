@@ -1,0 +1,23 @@
+<page xmlns="http://schemas.nativescript.org/tns.xsd" loaded="pageLoaded">
+    <page.actionBar>
+        <action-bar title="Components" backgroundColor="#2196F3" color="#f1f1f1" />
+    </page.actionBar>
+    <grid-layout rows="*,auto">
+        <stack-layout>
+            <Button text="button" class="btn" />
+
+            <TextField text="This is a text field" />
+
+            <Switch checked="{{ isChecked }}" />
+            
+            <Button isEnabled="{{ isChecked }}" text="This is a Button!" />
+
+            <ActivityIndicator busy="{{ isChecked }}" />
+
+            <TimePicker />
+        </stack-layout>
+        
+        <Label row="1" text="Go to Demo 4" class="link" tap="goToDemo4" />
+
+    </grid-layout>
+</page>

@@ -1,0 +1,17 @@
+<page xmlns="http://schemas.nativescript.org/tns.xsd" xmlns:PullRefresh="nativescript-pulltorefresh" loaded="pageLoaded">
+    <page.actionBar>
+        <action-bar title="Pull To Refresh :)" backgroundColor="#2196F3" color="#f1f1f1" />
+    </page.actionBar>
+    <grid-layout rows="*,auto">
+        <stack-layout row="0">
+            <PullRefresh:PullToRefresh refresh="refreshList" color="#3489db">
+                <list-view items="{{ users }}">
+                    <list-view.itemTemplate>
+                        <label text="{{ name }}" row="0" col="1" textWrap="true" class="message" />
+                    </list-view.itemTemplate>
+                </list-view>
+            </PullRefresh:PullToRefresh>
+        </stack-layout>
+        <Label row="1" text="Go to Demo 3" class="link" tap="goToDemo3" />
+    </grid-layout>
+</page>
